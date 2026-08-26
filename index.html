@@ -188,48 +188,6 @@ nav {
   line-height: 1.2;
 }
 
-/* S2 PROBLEM */
-.pull-quote {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--ink-soft);
-  line-height: 1.6;
-  border-left: 2px solid var(--indigo);
-  padding-left: 22px;
-  margin-bottom: 28px;
-  max-width: 620px;
-  text-align: left;
-}
-
-.body-text {
-  font-size: 15px;
-  font-weight: 300;
-  color: var(--ink-soft);
-  line-height: 1.85;
-  max-width: 700px;
-  text-align: justify;
-}
-
-.body-text p + p { margin-top: 14px; }
-
-.highlight-box {
-  margin-top: 22px;
-  background: var(--indigo);
-  border-radius: 10px;
-  padding: 14px 20px;
-}
-
-.highlight-box p {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  font-weight: 500;
-  color: white;
-  line-height: 1.4;
-  text-align: center;
-}
-
 /* S1 DO/DONT */
 .duality {
   display: grid;
@@ -283,6 +241,48 @@ nav {
   margin-top: 6px;
 }
 
+  /* S2 PROBLEM */
+.pull-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  border-left: 2px solid var(--indigo);
+  padding-left: 22px;
+  margin-bottom: 28px;
+  max-width: 620px;
+  text-align: left;
+}
+
+.body-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  max-width: 700px;
+  text-align: justify;
+}
+
+.body-text p + p { margin-top: 14px; }
+
+.highlight-box {
+  margin-top: 22px;
+  background: var(--indigo);
+  border-radius: 10px;
+  padding: 14px 20px;
+}
+
+.highlight-box p {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.4;
+  text-align: center;
+}
+  
 /* S3 SERVICES */
 .s-intro {
   font-size: 13px;
@@ -770,7 +770,7 @@ footer {
     </div>
 
     <div style="margin-top:32px;display:inline-flex;align-items:center;gap:10px;background:#F6F5FD;border:1px solid #EEEDFE;border-radius:6px;padding:10px 20px">
-      <span style="font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#3C3489">Launching</span>
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#3C3489">Launching></span>
       <span style="width:1px;height:14px;background:#C8C4F0;display:inline-block"></span>
     </div>
   </div>
@@ -807,8 +807,7 @@ footer {
       <div class="b-item">Payroll management</div>
       <div class="b-item">Recruitment</div>
 
-      
-        <p class="duality-foot">I work in the back-office, so your HR Ops team can focus on what they do best.</p>
+        <p>class="duality-foot">I work in the back-office, so your HR Ops team can focus on what they do best.</p>
     </div>
   </div>
 
@@ -844,26 +843,51 @@ footer {
   <div class="launch-note">Launch pricing · 2026</div>
 
   <!-- Service 01 -->
-  <div class="svc">
-    <div>
-      <span class="svc-tag">Service 01</span>
-      <div class="svc-name">SOP or Documentation</div>
-      <div class="svc-desc">One focused document built around a specific topic or a recurring case your HR Ops team needs documented. Available by section or by topic.</div>
-      <div class="svc-examples">By section: Onboarding · Lifecycle Management · Offboarding. By topic: Probation period termination process · Sick leave declaration · Mutual insurance onboarding guide · Service provider contract checklist.</div>
-      <div class="svc-chips">
-        <span class="chip">1 SOP. FR/EN.</span>
-        <span class="chip">OR decision tree</span>
-        <span class="chip">OR client education guide</span>
-        <span class="chip">PDF and editable format</span>
-        <span class="chip">1 revision round</span>
+<div class="svc">
+  <div style="width:100%">
+    <span class="svc-tag">SERVICE 01</span>
+    <div class="svc-name">Tailored Documentation</div>
+    <div class="svc-desc">One focused document built around a specific topic or a recurring case your HR Ops team needs documented. Available by section or by topic.</div>
+    <div class="svc-examples">By topic: Probation period termination process · Sick leave declaration · Mutual insurance onboarding guide · PTO's understanding.</div>
+
+    <div style="border-top:0.5px solid var(--border);margin:14px 0 10px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start">
+      <div>
+        <div style="font-size:12px;font-weight:500;color:var(--indigo);margin-bottom:4px">Essential</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:8px">One targeted document on a very specific point: a checklist, a reminder note, or a focused rule summary. FR or EN.</div>
+        <div class="svc-chips">
+          <span class="chip">1 targeted document</span>
+          <span class="chip">FR or EN</span>
+          <span class="chip">No revision round</span>
+          <span class="chip">48h delivery</span>
+        </div>
+      </div>
+      <div class="svc-price" style="min-width:110px">
+        <<span class="price-val" style="font-size:18px">€200</span>
+          <span class="price-note">excl. VAT. Flat.</span>
+          <span class="price-badge">48h delivery</span>
       </div>
     </div>
-    <div class="svc-price">
-      <span class="price-val">€290–590</span>
-      <span class="price-note">excl. VAT. Fixed price.</span>
-      <span class="price-badge">3–5 business days</span>
+
+    <div style="border-top:0.5px solid var(--border);margin:10px 0 0;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding-top:10px">
+      <div>
+        <div style="font-size:12px;font-weight:500;color:var(--indigo);margin-bottom:4px">Full</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:8px">Complete document: SOP, decision tree, or client education guide. Bilingual FR/EN. Ready to use.</div>
+        <div class="svc-chips">
+          <span class="chip">1 SOP. FR/EN.</span>
+          <span class="chip">OR decision tree</span>
+          <span class="chip">OR client education guide</span>
+          <span class="chip">PDF and editable format</span>
+          <span class="chip">1 revision round</span>
+        </div>
+      </div>
+      <div class="svc-price" style="min-width:110px">
+        <span class="price-val" style="font-size:18px">€290–590</span>
+        <span class="price-note">excl. VAT. Fixed price.</span>
+        <span class="price-badge">3–5 business days</span>
+      </div>
     </div>
   </div>
+</div>
 
   <!-- Service 02 -->
   <div class="svc">
